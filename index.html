@@ -130,6 +130,31 @@ footer .brand-logo{width:155px}
 .hero-bottom{margin-top:27px}
 }
 @media(max-width:390px){.hero h1{font-size:13vw}.hero-inner{padding-bottom:104px}}
+
+/* Version A: oversized U mark on the homepage, original wordmark in header/footer */
+.hero{height:100svh;min-height:810px;max-height:none}
+.hero-inner.hero-inner--u{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding-top:110px;padding-bottom:68px}
+.hero-inner--u .kicker{margin:0 0 16px;justify-content:center;font-size:10px}
+.hero-inner--u .hero-logo{position:relative;left:auto;top:auto;right:auto;width:clamp(250px,24.5vw,325px);height:auto;max-width:60vw;transform:none;opacity:1;filter:none;animation:none;margin:0 auto 22px;z-index:1}
+.hero-inner--u .hero-logo img{display:block;width:100%;height:auto}
+.hero-inner--u h1{font-size:clamp(44px,5.15vw,78px);line-height:1.06;letter-spacing:-.07em;max-width:920px;margin:0 auto}
+.hero-inner--u .hero-bottom{margin:24px auto 0;display:flex;flex-direction:column;align-items:center;gap:16px}
+.hero-inner--u .hero-bottom p{margin:0;text-align:center}
+.hero-inner--u .arrow-round{width:45px;height:45px;font-size:23px}
+@media(max-width:760px){
+.hero{min-height:745px}
+.hero-inner.hero-inner--u{padding-top:92px;padding-bottom:64px;justify-content:center}
+.hero-inner--u .kicker{font-size:8px;letter-spacing:.09em;margin-bottom:14px}
+.hero-inner--u .hero-logo{width:min(57vw,250px);max-width:250px;margin:0 auto 22px}
+.hero-inner--u h1{font-size:clamp(35px,8.6vw,56px);line-height:1.07;max-width:100%}
+.hero-inner--u .hero-bottom{margin-top:20px;gap:13px}
+.hero-inner--u .hero-bottom p{font-size:11px;line-height:1.9}
+.hero-inner--u .arrow-round{width:40px;height:40px;font-size:21px}
+}
+@media(max-width:390px){
+.hero-inner--u .hero-logo{width:min(57vw,222px)}
+.hero-inner--u h1{font-size:clamp(33px,8.3vw,45px)}
+}
 </style>
 </head>
 <body>
@@ -144,10 +169,12 @@ footer .brand-logo{width:155px}
 </nav>
 <main id="main">
 <section class="hero" id="top">
-<div class="hero-logo"><img src="unova-wordmark.svg" alt="UNOVA STUDIOS" width="1004" height="340" fetchpriority="high"></div>
-<div class="container hero-inner"><div class="kicker"><i class="signal"></i> INDEPENDENT CREATIVE STUDIO <span style="color:#59616c">/</span> JAPAN</div>
-<h1>CREATE<br><span>WHAT</span><br>COMES <em>NEXT.</em></h1>
-<div class="hero-bottom"><p>想像を、まだないカタチに。<br>映像とデザイン、そしてテクノロジーで<br>新しい可能性をつくる。</p><a href="#services" class="arrow-round" aria-label="サービスを見る">↘</a></div></div>
+<div class="container hero-inner hero-inner--u">
+<div class="kicker"><i class="signal"></i> INDEPENDENT CREATIVE STUDIO <span style="color:#59616c">/</span> JAPAN</div>
+<div class="hero-logo"><img src="unova-hero-u.svg" alt="UNOVA STUDIOSのUシンボル" width="635" height="740" fetchpriority="high"></div>
+<h1>CREATE WHAT COMES <em>NEXT.</em></h1>
+<div class="hero-bottom"><p>想像を、まだないカタチに。<br>映像とデザイン、そしてテクノロジーで<br>新しい可能性をつくる。</p><a href="#services" class="arrow-round" aria-label="サービスを見る">↘</a></div>
+</div>
 <div class="container hero-footer"><span>UNOVA STUDIOS © 2026</span><span>SCROLL TO EXPLORE ↓</span></div>
 </section>
 <div class="marquee" aria-label="ONE IDEA, ONE VISION, ONE FUTURE"><div class="marquee-track" aria-hidden="true"><span>ONE IDEA <b>✳</b> ONE VISION <b>✳</b> ONE FUTURE <b>✳</b> </span><span>ONE IDEA <b>✳</b> ONE VISION <b>✳</b> ONE FUTURE <b>✳</b> </span></div></div>
