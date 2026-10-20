@@ -108,14 +108,34 @@ footer{flex-direction:column;align-items:flex-start;padding:45px 0!important}foo
 }
 @media(max-width:390px){.hero h1{font-size:14vw}.hero-bottom p{font-size:10px}.identity strong{font-size:160px}.service-art{height:290px}.value{grid-template-columns:35px 1fr}.value small{grid-column:2}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.hero-logo,.marquee-track{animation:none}}
+
+/* Official user-supplied UNOVA STUDIOS logo identity */
+.brand-logo{display:block;width:165px;height:auto}
+footer .brand-logo{width:160px}
+.hero-logo{left:50%;right:auto;top:24%;width:min(74vw,950px);max-width:calc(100% - 36px);transform:translate(-50%,-50%);opacity:1;filter:none;animation:none;z-index:2}
+.hero-logo img{display:block;width:100%;height:auto}
+.hero-inner{justify-content:flex-end;padding-top:100px;padding-bottom:115px}
+.hero h1{font-size:clamp(74px,7.7vw,124px);line-height:.87}
+.hero .kicker{margin-bottom:24px}
+.hero-bottom{margin-top:32px}
+@media(max-width:1100px){.hero-logo{left:50%;right:auto;top:23%;width:min(85vw,950px)}}
+@media(max-width:760px){
+.brand-logo{width:132px}
+footer .brand-logo{width:155px}
+.hero{min-height:680px}
+.hero-logo{left:50%;right:auto;top:24%;width:calc(100% - 36px);max-width:650px;transform:translate(-50%,-50%);opacity:1}
+.hero-inner{justify-content:flex-end;padding-top:94px;padding-bottom:99px}
+.hero h1{font-size:clamp(65px,13vw,99px);line-height:.90}
+.hero .kicker{margin-bottom:22px}
+.hero-bottom{margin-top:27px}
+}
+@media(max-width:390px){.hero h1{font-size:13vw}.hero-inner{padding-bottom:104px}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">本文へスキップ</a>
 <header id="header">
-<a class="brand" href="#top" aria-label="UNOVA STUDIOS ホーム">
-<svg class="u-mark" viewBox="0 0 100 100" role="img" aria-label="UNOVA シンボル"><path d="M12 9V64C12 97 88 97 88 64V9L73 21V63C73 81 27 81 27 63V21Z"/><path d="M72 65 91 49" stroke="#090a0c" stroke-width="3.2" fill="none"/></svg>
-<span><strong>UNOVA<span class="dot">.</span></strong><small>STUDIOS</small></span></a>
+<a class="brand" href="#top" aria-label="UNOVA STUDIOS ホーム"><img class="brand-logo" src="unova-wordmark.svg" alt="UNOVA STUDIOS" width="167" height="57"></a>
 <nav class="desktop" aria-label="メインナビ"><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#philosophy">PHILOSOPHY</a><a href="#contact" class="talk">LET'S TALK <span>↗</span></a></nav>
 <button class="menu-btn" id="menu-btn" type="button" aria-label="メニューを開く" aria-controls="mobile-menu" aria-expanded="false"><i></i><i></i></button>
 </header>
@@ -124,7 +144,7 @@ footer{flex-direction:column;align-items:flex-start;padding:45px 0!important}foo
 </nav>
 <main id="main">
 <section class="hero" id="top">
-<div class="hero-logo" aria-hidden="true"><svg viewBox="0 0 100 100"><path fill="#f7f8f9" d="M12 9V64C12 97 88 97 88 64V9L73 21V63C73 81 27 81 27 63V21Z"/><path d="M72 65 91 49" stroke="#111920" stroke-width="3.2" fill="none"/></svg></div>
+<div class="hero-logo"><img src="unova-wordmark.svg" alt="UNOVA STUDIOS" width="1004" height="340" fetchpriority="high"></div>
 <div class="container hero-inner"><div class="kicker"><i class="signal"></i> INDEPENDENT CREATIVE STUDIO <span style="color:#59616c">/</span> JAPAN</div>
 <h1>CREATE<br><span>WHAT</span><br>COMES <em>NEXT.</em></h1>
 <div class="hero-bottom"><p>想像を、まだないカタチに。<br>映像とデザイン、そしてテクノロジーで<br>新しい可能性をつくる。</p><a href="#services" class="arrow-round" aria-label="サービスを見る">↘</a></div></div>
@@ -144,7 +164,7 @@ footer{flex-direction:column;align-items:flex-start;padding:45px 0!important}foo
 <section class="section container" id="philosophy"><div class="sect-label reveal"><span>/ 03</span> OUR PHILOSOPHY</div><div class="phil-grid"><div class="reveal"><span class="eyebrow">THE SPIRIT OF 111</span><h2 class="one-stack">ONE<br>ONE<br><span>ONE.</span></h2><span class="caption">ONE IDEA / ONE VISION / ONE FUTURE</span></div><div class="phil-copy reveal"><p class="phil-lead">すべては、<br><span>ひとつの</span>アイデアから。</p><p class="muted">ひとつのアイデア。ひとつのビジョン。ひとつの未来。「111」は、UNOVA STUDIOSが大切にしたい創造への姿勢を表しています。</p><div class="values"><div class="value"><span>01</span><b>ONE IDEA</b><small>発想から始まる</small></div><div class="value"><span>02</span><b>ONE VISION</b><small>想いを形にする</small></div><div class="value"><span>03</span><b>ONE FUTURE</b><small>新しい可能性へ</small></div></div></div></div></section>
 <section class="contact" id="contact"><div class="container"><div class="sect-label reveal"><span>/ 04</span> GET IN TOUCH</div><div class="intro reveal"><div class="eyebrow"><i class="signal"></i> OPEN FOR NEW IDEAS</div><p>一緒に、新しいものをつくろう。</p></div><h2 class="reveal">HAVE AN<br><span>IDEA?</span></h2><a class="contact-cta reveal" href="mailto:unovastudiosjp@gmail.com?subject=UNOVA%20STUDIOS%20%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">LET'S TALK <span aria-hidden="true">↗</span></a><div class="email"><span class="eyebrow">OR EMAIL US DIRECTLY</span><a href="mailto:unovastudiosjp@gmail.com">unovastudiosjp@gmail.com</a><button class="copy" type="button" id="copy-email">COPY ↗</button></div></div></section>
 </main>
-<footer class="container"><div><a class="brand" href="#top"><svg class="u-mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M12 9V64C12 97 88 97 88 64V9L73 21V63C73 81 27 81 27 63V21Z"/></svg><span><strong>UNOVA.</strong><small>STUDIOS</small></span></a><p>CREATE WHAT COMES NEXT.</p></div><div class="right"><a href="#top">BACK TO TOP ↑</a><span class="fine">© 2026 UNOVA STUDIOS<br>INDEPENDENT CREATIVE STUDIO / JAPAN</span></div></footer>
+<footer class="container"><div><a class="brand" href="#top" aria-label="UNOVA STUDIOS ホームへ戻る"><img class="brand-logo" src="unova-wordmark.svg" alt="UNOVA STUDIOS" width="167" height="57"></a><p>CREATE WHAT COMES NEXT.</p></div><div class="right"><a href="#top">BACK TO TOP ↑</a><span class="fine">© 2026 UNOVA STUDIOS<br>INDEPENDENT CREATIVE STUDIO / JAPAN</span></div></footer>
 <script>
 (function(){
 const header=document.getElementById('header'),menu=document.getElementById('mobile-menu'),btn=document.getElementById('menu-btn');
